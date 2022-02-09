@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="color">
+  <h1 class="titulo">código secreto</h1>
+<div id="codigo">
+  <img src="codigo.jpg" alt="codigo" id="codigo"> 
+</div>
+<div id="cajas">
+  <main class="main">
+    <section class="form box">
+      <form action="" id="formm" name="registro">
+        <label for="input-texto">Solo letras minúsculas, sin acento</label>
+        <input class="text-input"  type="text" name="input-texto"  id="input-texto" placeholder="Ingrese el texto aqui">
+        <button class="btn" type="button"  id="btn-encriptar" onclick= "obtenerdatos()"> encriptar! </button>
+        <button class="btn" type="button"  onclick="desencriptarTexto()" id="desencriptarT">desencriptar!</button>
+        
+      </form>
+    </section>
+  
+    <section class="msg box">
+      <h2 id="">Mensaje encriptada:</h2>
+      <input class="text-input" type="text" name="traductor" id="msg" readonly="readonly">
+      <button class="btn" type="submit" onclick ="copiado()" id="btn-copy">copiar</button>
+    </section>
+  </main>
+</div>
+<div id="descripcion">
+  <h2>¿Te gustaria tener anotado algo que solo vos puedas decifrar?</h2>
+  <p>En esta pagina te traemos un novedoso y divertido metodo para que puedas tener tus anotaciones en secreto mediante un metodo de cifrado. Solo tenes que introducir el texto o las palabras que quieras cifrar en el primer casillero y te aparecera cifrado en el siguiente.</p>
+</div>
+<img src="mensje cifrado.png" alt="Mensaje cifrado" id="imagencifrado">
+<div id="solucion" >
+  <h2>¿No recordas como volver a decifrarlo?</h2>
+  <p >¡No te preocupes! Podes colocar tu texto cifrado en el segundo casillero y volver a desencriptarlo.</p>
+</div>
+  <script src="javascript.js"></script>
+  <script src="reglas.js"></script>
+  
+</body>
+</html>
